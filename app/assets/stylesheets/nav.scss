@@ -1,0 +1,82 @@
+.header{
+  // position: relative;
+  padding: 0px;
+  height: 100%;
+  background-image: url(main.png);
+  background-size: cover;
+}
+
+.navbar{
+  // position: absolute;
+  top: 0;
+  width: 100%
+}
+
+
+.mainImage{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.btn{
+  // margin-bottom: 1rem;
+  width: 100%
+}
+
+.formMargin{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.margin1rem{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alignCenter{
+  display: flex;
+  align-items: center;
+}
+
+a.nav-link{
+  color: #646F79;
+    &:hover{
+      color: #28a745;
+    }
+    &.active{color: #28a745;
+    }
+}
+
+
+.carousel-item{
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.margin_top_bot_5{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#cards .card_active{
+  background-color: #5cb85c;
+    & h5, h1, p, {
+      color: #f8f9fa;
+    }
+    &.btn-success{
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+
+}

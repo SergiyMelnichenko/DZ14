@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DZ14</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class="container-fluid header ">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><%=image_tag ("/images/logo.png")%></a>
+          <ul class="d-flex navbar-nav align-items-end ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn btn-success my-2 my-sm-0" type="submit">Sign In</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row d-flex align-items-center">
+              <div class="col-12 col-md-5 text-center text-md-left">
+                <div class="container text-light">
+                  <h5>Join the change</h5>
+                  <h1>Space service that moves work forward</h1>
+                </div>
+              </div>
+              <div class="col-12 col-md-7">
+                <form class="container bg-white rounded-lg formMargin">
+                  <div class="formMargin">
+                    <h1 class="text-dark" >Get started for free</h1>
+                  </div>
+                  <div class="form-group ">
+                    <input class="form-control form-control-lg" type="text" placeholder="Enter your username">
+                  </div>
+                  <div class="form-group ">
+                    <input class="form-control form-control-lg" type="text" placeholder="Enter your email address">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control form-control-lg" type="text" placeholder="Enter your password">
+                  </div>
+                  <button type="submit" class="btn btn-success btn-lg">Get Started</button>
+                </form>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-around flex-wrap mt-1 mt-md-3">
+      <%=image_tag ("/images/brands/airbnb.png"), class: "margin1rem"%>
+      <%=image_tag ("/images/brands/amazon.png"), class: "margin1rem"%>
+      <%=image_tag ("/images/brands/google.png"), class: "margin1rem"%>
+      <%=image_tag ("/images/brands/lenovo.png"), class: "margin1rem"%>
+      <%=image_tag ("/images/brands/paypal.png"), class: "margin1rem"%>
+      <%=image_tag ("/images/brands/samsung.png"), class: "margin1rem"%>
+      <%=image_tag ("/images/brands/slack.png"), class: "margin1rem"%>
+      <%=image_tag ("/images/brands/sportify.png"), class: "margin1rem"%>
+    </div>
+    <div class="container d-flex mt-3 mt-md-5">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <nav class="nav flex-column text-center text-md-left">
+              <h5>3 methods Space can help to grow your business with</h5>
+              <a class="nav-link active" href="#">1. Features</a>
+              <a class="nav-link" href="#">2. Key benefits</a>
+              <a class="nav-link" href="#">3. Components</a>
+          </nav>
+        </div>
+        <div class="d-flex col-12 col-md-7 flex-wrap">
+          <div class="col-12 col-md-6 container mb-3">
+            <%=image_tag ("/images/icon11.png")%>
+            <p class="text-secondary mb-0">This is where we sit down, grab a cup of coffee and dial in the details. Understanding the task at hand and ironing out the wrinkles is key.</p>
+            <a class="nav-link active px-0" href="#">learn more</a>
+          </div>
+          <div class="col-12 col-md-6 container mb-4">
+            <%=image_tag ("/images/icon12.png")%>
+            <p class="text-secondary mb-0">Now that we've aligned the details, it's time to get things mapped out and organized. This part is really crucial in keeping the project in line to completion.</p>
+            <a class="nav-link active px-0" href="#">learn more</a>
+          </div>
+          <div class="col-12 col-md-6 container mb-3">
+            <%=image_tag ("/images/icon21.png")%>
+            <p class="text-secondary mb-0">The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+            <a class="nav-link active px-0" href="#">learn more</a>
+          </div>
+          <div class="col-12 col-md-6 container mb-3">
+            <%=image_tag ("/images/icon22.png")%>
+            <p class="text-secondary mb-0">Whether through commerce or just an experience to tell your brand's story, the time has come to start using development languages that fit your projects needs.</p>
+            <a class="nav-link active px-0" href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="container rounded-circle carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="conteiner carousel-inner rounded-lg border-lg border-secondary">
+        <div class="carousel-item active" style="background-image: url('/images/slide1.jpg');">
+        </div>
+        <div class="carousel-item" style="background-image: url('/images/slide2.jpg');">
+        </div>
+        <div class="carousel-item" style="background-image: url('/images/slide3.jpg');">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <span class="sr-only">Next</span>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="cards" class="container-fluid d-flex justify-content-center">
+      <div class="container row d-flex justify-content-center">
+        <div class="rounded-lg col-8 col-md mb-5 mt-5 mr-3 ml-3">
+          <p class="mt-4">Start</p>
+          <h1 class="mt-4">Free</h1>
+          <ul>
+            <li class="mt-4"><h5>Community support</h5></li>
+            <li class="mt-4"><h5>400+ pages</h5></li>
+            <li class="mt-4"><h5>100+ header variations</h5></li>
+            <li class="mt-4"><h5>20+ home page options</h5></li>
+          </ul>
+          <div class="margin_top_bot_5 btn btn-success">Start Free Trial
+          </div>
+        </div>
+        <div class="rounded-lg col-8 col-md mb-5 mt-5 mr-3 ml-3 card_active">
+          <p class="mt-4">Start</p>
+          <h1 class="mt-4">Free</h1>
+          <ul>
+            <li class="mt-4"><h5>Community support</h5></li>
+            <li class="mt-4"><h5>400+ pages</h5></li>
+            <li class="mt-4"><h5>100+ header variations</h5></li>
+            <li class="mt-4"><h5>20+ home page options</h5></li>
+          </ul>
+          <div class="margin_top_bot_5 btn btn-success">Start Free Trial
+          </div>
+        </div>
+        <div class="rounded-lg col-8 col-md mb-5 mt-5 mr-3 ml-3">
+          <p class="mt-4">Start</p>
+          <h1 class="mt-4">Free</h1>
+          <ul>
+            <li class="mt-4"><h5>Community support</h5></li>
+            <li class="mt-4"><h5>400+ pages</h5></li>
+            <li class="mt-4"><h5>100+ header variations</h5></li>
+            <li class="mt-4"><h5>20+ home page options</h5></li>
+          </ul>
+          <div class="margin_top_bot_5 btn btn-success">Start Free Trial
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <%= yield %>
+  </body>
+</html>
